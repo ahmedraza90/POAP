@@ -112,35 +112,32 @@ function App() {
         // country,
         // phoneNumber: `${code}${phone}`
       }
-      // var config = {
-      //   method: 'POST',
-      //   headers: {
-      //     'Content-Type': 'application/json'
-      //   },
-      //   body: JSON.stringify(obj)
-      // };
+      var config = {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(obj)
+      };
       e.preventDefault();
-      // fetch(`https://qr-code-api.oasisx.world/meetup2-send-email`, config)
-      //   .then(function (response) {
-      //     // The API call was successful!
-      //     if (response.ok) {
-      //       return response.json();
-      //     } else {
-      //       return Promise.reject(response);
-      //     }
-      //   })
-      //   .then(function (data) {
-      //     console.log(data)
-      //     setResponse(data.status)
-      //     console.log(response)
+      fetch(`https://qr-code-api.oasisx.world/POAP`, config)
+        .then(function (response) {
+          // The API call was successful!
+          if (response.ok) {
+            return response.json();
+          } else {
+            return Promise.reject(response);
+          }
+        })
+        .then(function (data) {
+          setResponse(data.status)
   
-      //   })
-      //   .catch(function (err) {
-      //     // There was an error
-      //     console.log('Something went wrong.', err);
-      //   });
+        })
+        .catch(function (err) {
+          // There was an error
+          console.log('Something went wrong.', err);
+        });
       console.log(obj)
-      setResponse("") 
     }
 
 
@@ -326,7 +323,7 @@ function App() {
             ?
             <center>
               <div className="row justify-content-center">
-                <h1 className="registered">You have already registered</h1>
+                <h1 className="registered">User with this Email or twitter Account has already been registered</h1>
               </div>
             </center>
             : null
@@ -360,4 +357,4 @@ export default App;
 // ​
 // twitter: "aa"
 // ​
-// useCase: Array [ "aaa" ]
+// useCases: Array [ "aaa" ]
