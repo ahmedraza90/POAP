@@ -1,6 +1,5 @@
 import './style.css';
 // import oasisx from './images/oasisx.png'
-import artsDao from './images/artsDao.png'
 import oasisxLogo from './images/Copy of OasisX-logo-03.png'
 import logo from './images/LBF-elemets-03.png'
 import { useState, useEffect } from 'react';
@@ -58,7 +57,7 @@ function App() {
   }
   useEffect(() => {
     console.log(useCase);
-  }, [otherValue,useCase]);
+  }, [useCase]);
   const InsertUseCase = (event) => {
     const selectedOption = event.target.value;
     let newUseCase;
@@ -98,7 +97,7 @@ function App() {
     if(otherValue){
       useCase.push(otherValue)
     }
-    if(useCase.length == 0){
+    if(useCase.length === 0){
       e.preventDefault()
       setChecked(false);
     }else{
@@ -113,13 +112,13 @@ function App() {
         // country,
         // phoneNumber: `${code}${phone}`
       }
-      var config = {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify(obj)
-      };
+      // var config = {
+      //   method: 'POST',
+      //   headers: {
+      //     'Content-Type': 'application/json'
+      //   },
+      //   body: JSON.stringify(obj)
+      // };
       e.preventDefault();
       // fetch(`https://qr-code-api.oasisx.world/meetup2-send-email`, config)
       //   .then(function (response) {
@@ -141,6 +140,7 @@ function App() {
       //     console.log('Something went wrong.', err);
       //   });
       console.log(obj)
+      setResponse("") 
     }
 
 
