@@ -152,7 +152,7 @@ function App() {
             ?
             <center>
               <div className="row sec2" data-aos="fade-down" data-aos-delay="250">
-                <h1 className="display-4 text-black fw-semibold"> Thank you for registering, please check your email for instructions to claim your ticket</h1>
+                <h1 className="display-4 text-black fw-semibold"> Thank you for registering, A member of our team will contact you shortly.</h1>
               </div>
             </center>
             :
@@ -176,7 +176,7 @@ function App() {
                     <div className="section-title">
                       <h1 className="display-4 fw-semibold title">POAP Request Form</h1>
                       <center>
-                        <p className="text-black" style={{ fontSize : "20px"}}>Please answer the below questions. A member of our team will contact you shortly. </p>
+                        <p className="text-black" style={{ fontSize : "20px"}}>Please answer the below questions </p>
                       </center>
                     </div>
                   </div>
