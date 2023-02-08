@@ -176,6 +176,7 @@ function App() {
                     <div className="section-title">
                       <h1 className="display-4 fw-semibold title">POAP Request Form</h1>
                       <center>
+                      <p className="text-black" style={{ fontSize : "20px"}}>Create POAPs for your events </p>
                         <p className="text-black" style={{ fontSize : "20px"}}>Please answer the below questions </p>
                       </center>
                     </div>
