@@ -215,7 +215,7 @@ function App() {
                             <input required type="radio" value="FreeLancer" name='g' onChange={(e) => { InsertDescribe(e) }} />&ensp; FreeLancer
 
                           </div >
-                          <div style={{ display: "flex", alignItems: "flex-end" }}>
+                          <div style={{ display: "flex", alignItems: "flex-end", flexWrap: "wrap" }}>
                             <div >
                               <input
                               required
@@ -277,7 +277,7 @@ function App() {
                             />
                             &ensp; FreeLancer
                           </div>
-                          <div style={{ display: "flex", alignItems: "flex-end" }}>
+                          <div style={{ display: "flex", alignItems: "flex-end", flexWrap: "wrap" }}>
                             <div>
                               <input
                                 type="checkbox"
